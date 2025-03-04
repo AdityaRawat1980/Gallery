@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <h1 class="gallery-title">Gallery</h1>
+        
+        <section class="album-section" data-album="photos">
+            <h2>Photos</h2>
+            <div class="gallery" id="photos-gallery" role="gallery">
+                <div class="photo-container">
+                    <img src="images/download.jpeg" alt="Photo" loading="lazy">
+                    <span class="heart-icon" data-favorited="false"><i class="far fa-heart"></i></span>
+                </div>
+                <div class="photo-container">
+                    <img src="images/images (1).jpeg" alt="Photo" loading="lazy">
+                    <span class="heart-icon" data-favorited="false"><i class="far fa-heart"></i></span>
+                </div>
+                <div class="photo-container">
+                    <img src="images/images (2).jpeg" alt="Photo" loading="lazy">
+                    <span class="heart-icon" data-favorited="false"><i class="far fa-heart"></i></span>
+                </div>
+                <div class="photo-container">
+                    <img src="images/images (3).jpeg" alt="Photo" loading="lazy">
+                    <span class="heart-icon" data-favorited="false"><i class="far fa-heart"></i></span>
+                </div>
+                <div class="photo-container">
+                    <img src="images/images (4).jpeg" alt="Photo" loading="lazy">
+                    <span class="heart-icon" data-favorited="false"><i class="far fa-heart"></i></span>
+                </div>
+                <div class="photo-container">
+                    <img src="images/images (5).jpeg" alt="Photo" loading="lazy">
+                    <span class="heart-icon" data-favorited="false"><i class="far fa-heart"></i></span>
+                </div>
+                <div class="photo-container">
+                    <img src="images/images.jpeg" alt="Photo" loading="lazy">
+                    <span class="heart-icon" data-favorited="false"><i class="far fa-heart"></i></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="album-section" data-album="favorites">
+            <h2>Liked</h2>
+            <div class="gallery" id="favorites-gallery" role="gallery"></div>
+        </section>
+    </div>
+    
+    <div class="lightbox" role="dialog" aria-label="Photo Lightbox">
+        <span class="close" aria-label="Close"><i class="fas fa-times"></i></span>
+        <span class="prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></span>
+        <div class="lightbox-content">
+            <img src="" alt="" class="lightbox-image">
+            <div class="caption"></div>
+            <span class="lightbox-heart" data-favorited="false"><i class="far fa-heart"></i></span>
+        </div>
+        <span class="next" aria-label="Next"><i class="fas fa-chevron-right"></i></span>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
